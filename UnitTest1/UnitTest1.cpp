@@ -22,16 +22,14 @@ namespace UnitTest01
 			int actual_result = getPerimeter(&x, &y);
 			Assert::AreEqual(expected_result, actual_result);
 		}
-
 		TEST_METHOD(TestArea)
 		{
 			int x = 1;
 			int y = 1;
-			int expected_result = 2;
+			int expected_result = 1;
 			int actual_result = getArea(&x, &y);
 			Assert::AreEqual(expected_result, actual_result);
 		}
-
 		TEST_METHOD(TestMaxLengthLimit01)
 		{
 			int input = 101;
@@ -50,7 +48,6 @@ namespace UnitTest01
 			bool actual_Result = (length == input);
 			Assert::IsTrue(actual_Result == expected_result);
 		}
-
 		TEST_METHOD(TestNormalLength03)
 		{
 			int input = 50;
@@ -60,7 +57,6 @@ namespace UnitTest01
 			bool actual_Result = (length == input);
 			Assert::IsTrue(actual_Result == expected_result);
 		}
-
 		TEST_METHOD(TestMaxWidthLimit01)
 		{
 			int input = 101;
@@ -79,7 +75,6 @@ namespace UnitTest01
 			bool actual_Result = (length == input);
 			Assert::IsTrue(actual_Result == expected_result);
 		}
-
 		TEST_METHOD(TestNormalWidth03)
 		{
 			int input = 50;
