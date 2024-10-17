@@ -60,28 +60,28 @@ namespace UnitTest01
 		TEST_METHOD(TestMaxWidthLimit01)
 		{
 			int input = 101;
-			int length = 1;
-			setWidth(input, &length);
+			int width = 1;
+			setWidth(input, &width);
 			bool expected_result = false;
-			bool actual_Result = (length == input);
+			bool actual_Result = (width == input);
 			Assert::IsTrue(actual_Result == expected_result);
 		}
 		TEST_METHOD(TestMinWidthLimit02)
 		{
 			int input = 0;
-			int length = 1;
-			setWidth(input, &length);
+			int width = 1;
+			setWidth(input, &width);
 			bool expected_result = false;
-			bool actual_Result = (length == input);
+			bool actual_Result = (width == input);
 			Assert::IsTrue(actual_Result == expected_result);
 		}
 		TEST_METHOD(TestNormalWidth03)
 		{
 			int input = 50;
-			int length = 1;
-			setWidth(input, &length);
+			int width = 1;
+			setWidth(input, &width);
 			bool expected_result = true;
-			bool actual_Result = (length == input);
+			bool actual_Result = (width == input);
 			Assert::IsTrue(actual_Result == expected_result);
 		}
 
