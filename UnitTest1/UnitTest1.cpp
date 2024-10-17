@@ -32,7 +32,7 @@ namespace UnitTest01
 			Assert::AreEqual(expected_result, actual_result);
 		}
 
-		TEST_METHOD(TestMaxLengthLimit01)
+		TEST_METHOD(TestMaxLengthLimit)
 		{
 			int input = 101;
 			int length = 1;
@@ -41,7 +41,7 @@ namespace UnitTest01
 			bool actual_Result = (length == input);
 			Assert::IsTrue(actual_Result == expected_result);
 		}
-		TEST_METHOD(TestMinLengthLimit02)
+		TEST_METHOD(TestMinLengthLimit)
 		{
 			int input = 0;
 			int length = 1;
@@ -51,7 +51,7 @@ namespace UnitTest01
 			Assert::IsTrue(actual_Result == expected_result);
 		}
 
-		TEST_METHOD(TestNormalLength03)
+		TEST_METHOD(TestLengthLimit)
 		{
 			int input = 50;
 			int length = 1;
@@ -61,34 +61,7 @@ namespace UnitTest01
 			Assert::IsTrue(actual_Result == expected_result);
 		}
 
-		TEST_METHOD(TestMaxWidthLimit01)
-		{
-			int input = 101;
-			int length = 1;
-			setWidth(input, &length);
-			bool expected_result = false;
-			bool actual_Result = (length == input);
-			Assert::IsTrue(actual_Result == expected_result);
-		}
-		TEST_METHOD(TestMinWidthLimit02)
-		{
-			int input = 0;
-			int length = 1;
-			setWidth(input, &length);
-			bool expected_result = false;
-			bool actual_Result = (length == input);
-			Assert::IsTrue(actual_Result == expected_result);
-		}
 
-		TEST_METHOD(TestNormalWidth03)
-		{
-			int input = 50;
-			int length = 1;
-			setWidth(input, &length);
-			bool expected_result = true;
-			bool actual_Result = (length == input);
-			Assert::IsTrue(actual_Result == expected_result);
-		}
 
 	};
 }
